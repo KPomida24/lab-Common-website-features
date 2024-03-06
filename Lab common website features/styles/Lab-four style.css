@@ -1,0 +1,215 @@
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  
+  details[open] {
+    padding: 0.5em;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+  }
+
+  body {
+    margin: 0;
+    font-family: system-ui;
+  }
+
+  .hero-container {
+    background-color: green;
+    background-image: url(../Assets/DPP-cttnwood-flats-2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #F0F0F0; 
+  }
+
+  body {
+    background-color: rgb(194, 188, 165);
+    color: #111110; 
+    font-family: Arial, sans-serif; 
+    font-size: medium;
+    padding: 0;
+}
+
+.hero-container {
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(3, 104, 3);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content2 h1 {
+    font-size: 2.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.content2 p {
+    font-size: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.accordion-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(../Assets/DPP-cttnwood-flats.jpg); 
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+.accordion-container h1 {
+    color: #6B8E23; 
+    margin-bottom: 20px;
+}
+
+details {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-text-fill-color: #6B8E23;
+}
+
+summary {
+    cursor: pointer;
+    background-color: #F0F0F0; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+details[open] summary {
+    background-color: #DCDCDC; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-left: 20px;
+    padding-left: 10px;
+    position: relative;
+    color: #333; 
+}
+
+ul li:before {
+    content: '\2022'; 
+    color: #6B8E23; 
+    position: absolute;
+    left: 0;
+}
+
+.details > ul {
+    margin-left: 0;
+    padding-left: 20px; 
+}
+
+.details > ul > li {
+    margin-left: 0;
+}
+
+.footer-container {
+    background-color: #444444;
+}
+
+.footer-container p {
+    margin: 0;
+    color: forestgreen;
+}
+
+.map-container {
+    flex: 1;
+    float: right;
+    padding-right: 30px;
+}
+
+.map-container iframe {
+    width: 100%; 
+    height: 200px; 
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+    .card:nth-child(8) {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  .image-card {
+    border: 5px; 
+    overflow: hidden; 
+    margin-bottom: 20px; 
+    border-radius: 10px;
+    border-color: green;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  .image-card {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .image-card img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }
